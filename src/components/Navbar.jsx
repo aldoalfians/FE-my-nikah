@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import logo from "../logo.png";
+import logo from "../MyNikah.png";
 import { useDispatch, useSelector } from "react-redux";
 import { LogOut, reset } from "../features/authSlice";
 
@@ -18,6 +18,7 @@ const Navbar = () => {
   return (
     <div>
       <nav
+        style={{ background: "#206A5D" }}
         className="navbar is-fixed-top has-shadow"
         role="navigation"
         aria-label="main navigation"
@@ -44,11 +45,7 @@ const Navbar = () => {
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-end">
             <div className="navbar-item">
-              <div className="buttons">
-                <button onClick={logout} className="button is-light">
-                  Log out
-                </button>
-              </div>
+              <div className="buttons"></div>
             </div>
           </div>
         </div>
