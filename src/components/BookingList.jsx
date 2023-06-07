@@ -40,17 +40,20 @@ const BookingList = () => {
             <th>Tanggal</th>
             <th>Harga</th>
             <th>Tempat</th>
+            <th>Status</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
           {booking?.map((book, index) => (
             <tr key={book.uuid}>
               <td>{index + 1}</td>
-              <td>{book.name}</td>
+              <td>{book.user.name}</td>
               <td>{book.hours}</td>
-              <td>{book.date}</td>
-              <td>{book.price}</td>
+              <td>{book.date.substr(0, 10)}</td>
+              <td>{book.price === 0 ? "Gratis" : book.price}</td>
               <td>{book.role === "in" ? "Di dalam KUA" : "Di luar KUA"}</td>
+              <td>{book.status}</td>
               <td>
                 <Link
                   to={`/booking/edit/${book.uuid}`}
