@@ -1,0 +1,95 @@
+.button.is-primary {
+  background-color: #206a5d !important;
+  border-color: transparent;
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  background: var(--background-color);
+}
+
+/* .ant-layout {
+  background: var(--background-color);
+  min-height: inherit;
+} */
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.loading-screen {
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.loading-screen:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgb(255, 255, 255) rgb(255, 255, 255));
+
+  background: -webkit-radial-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+@media (min-width: 1300px) {
+  .container {
+    width: 1240px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1340px;
+    max-width: 100%;
+  }
+}
+
+.ant-typography.ant-typography-success {
+  color: var(--secondary-color);
+}
+
+:where(.css-dev-only-do-not-override-12jzuas).ant-menu-light
+  .ant-menu-item-selected,
+:where(.css-dev-only-do-not-override-12jzuas).ant-menu-light
+  > .ant-menu
+  .ant-menu-item-selected {
+  background-color: #f4fffb;
+  color: var(--secondary-color);
+}
+
+:root {
+  --primary-color: #3868b0;
+  --secondary-color: #206a5d;
+  --white-color: #ffffff;
+  --background-color: linear-gradient(180deg, #f5f8fb 0%, #e8eff2 35.8%);
+  --border-radius-base: 8px;
+}
