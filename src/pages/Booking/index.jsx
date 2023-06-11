@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import Layout from "./Layout";
+import Layout from "../../components/Layout";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { getMe } from "../features/authSlice";
-import BookingList from "../components/BookingList";
+import { getMe } from "../../features/authSlice";
+import BookingList from "../../components/BookingList";
 
 const Booking = () => {
   const dispatch = useDispatch();
