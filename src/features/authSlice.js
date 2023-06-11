@@ -44,7 +44,6 @@ export const getMe = createAsyncThunk("user/getMe", async (_, thunkAPI) => {
       },
     };
     const response = await axios.get("http://localhost:5000/me", config);
-    console.log(response);
     return response.data;
   } catch (error) {
     if (error.response) {

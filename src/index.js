@@ -3,7 +3,9 @@ import { createRoot } from "react-dom/client";
 import { Provider } from "react-redux";
 import { store } from "./app/store";
 import App from "./App";
-import "./global.css";
+import "./styles/global.css";
+import "./styles/login.css";
+import "antd/dist/reset.css";
 import "bulma/css/bulma.css";
 import axios from "axios";
 
